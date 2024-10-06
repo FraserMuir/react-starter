@@ -47,6 +47,9 @@ export default tseslint.config(
 
       // Prefer type over interface
       "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
+
+      // Allow arrow functions to return void
+      "@typescript-eslint/no-confusing-void-expression": ["warn", { ignoreArrowShorthand: true }],
     },
   },
 );
