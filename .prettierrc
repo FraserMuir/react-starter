@@ -1,0 +1,8 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 200,
+  "endOfLine": "lf",
+  "importOrder": ["<THIRD_PARTY_MODULES>", "", "~/", "", "^[./]"],
+  "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"]
+}

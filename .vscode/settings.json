@@ -1,0 +1,10 @@
+{
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
+  "typescript.preferences.quoteStyle": "single",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.eol": "\n"
+}
