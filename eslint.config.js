@@ -30,7 +30,23 @@ export default tseslint.config(
       ...react.configs.recommended.rules,
       ...react.configs["jsx-runtime"].rules,
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+
+      // Override unused-vars to ignore variables starting with an "_"
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+        },
+      ],
+
+      // Allow non-null assertions
       "@typescript-eslint/no-non-null-assertion": "off",
+
+      // Prefer type over interface
+      "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
     },
   },
 );
