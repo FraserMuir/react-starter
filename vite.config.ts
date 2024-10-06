@@ -13,8 +13,9 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     coverage: {
+      provider: "v8",
       reporter: ["lcov", "text"],
-      exclude: ["node_modules/", "dist/", "coverage/"],
+      include: ["src/"],
     },
   },
 });
